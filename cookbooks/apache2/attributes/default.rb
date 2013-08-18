@@ -94,7 +94,7 @@ else
   default['apache']['pid_file']  = "logs/httpd.pid"
   default['apache']['lib_dir'] = "/usr/lib/apache2"
   default['apache']['libexecdir'] = "#{node['apache']['lib_dir']}/modules"
-  default['apache']['default_site_enabled'] = false
+  default['apache']['default_site_enabled'] = true
 end
 
 ###
