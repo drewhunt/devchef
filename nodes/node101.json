@@ -1,0 +1,12 @@
+{
+  "name": "node101",
+  "chef_environment": "_default",
+  "run_list": [
+    "role[base]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

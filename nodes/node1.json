@@ -1,0 +1,19 @@
+{
+  "name": "node1",
+  "chef_environment": "_default",
+  "run_list": [
+    "role[base]",
+    "role[web]"
+  ],
+  "normal": {
+    "tags": [
+
+    ],
+    "mysql": {
+      "server_debian_password": "GJtA6kADzxmV7QA3tf7r",
+      "server_root_password": "E5qt7BHCSbYO9Tyubg70",
+      "server_repl_password": "r8DCpAMsxWjM87l6dYME"
+    },
+    "set_fqdn": "*.ec2.opaqueresearch.com"
+  }
+}

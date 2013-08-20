@@ -1,0 +1,25 @@
+{
+  "name": "base",
+  "description": "Base provision",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "set_fqdn": "*.ec2.opaqueresearch.com",
+    "route53": {
+      "zone_id": "Z2PK6TCUGQQGPP",
+      "aws_access_key_id": "AKIAJASZKG7PQDAJSIQA",
+      "aws_secret_access_key": "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"
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[hostname]",
+    "recipe[route53]",
+    "recipe[nagios::client]"
+  ],
+  "env_run_lists": {
+  }
+}

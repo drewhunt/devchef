@@ -1,0 +1,19 @@
+{
+  "name": "monitoring",
+  "description": "Monitoring server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "starter_name": "Andrew Hunt"
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apache2]",
+    "recipe[nagios::server]",
+    "recipe[graphite]",
+    "recipe[php]"
+  ],
+  "env_run_lists": {
+  }
+}

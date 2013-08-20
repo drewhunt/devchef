@@ -1,0 +1,17 @@
+{
+  "name": "node2",
+  "chef_environment": "_default",
+  "run_list": [
+    "role[base]",
+    "role[proxy]"
+  ],
+  "normal": {
+    "tags": [
+
+    ],
+    "ohai": {
+      "plugins": {
+      }
+    }
+  }
+}

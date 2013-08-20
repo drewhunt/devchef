@@ -1,0 +1,10 @@
+#!/bin/bash
+for env in `knife environment list`; do
+  knife environment show $env --format=json > ~/chef-repo/environments/$env.json
+done
+for role in `knife role list`; do
+  knife role show $role --format=json > ~/chef-repo/roles/$role.json
+done
+for node in `knife node list`; do
+  knife node show $node --format=json > ~/chef-repo/nodes/$node.json
+done
