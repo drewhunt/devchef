@@ -1,0 +1,2 @@
+knife ec2 server create -I ami-d0f89fb9 -S ahunt-lab -x ubuntu -f t1.micro -N node101 -r role[base]
+

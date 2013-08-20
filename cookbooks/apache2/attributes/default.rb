@@ -52,7 +52,7 @@ when "debian", "ubuntu"
   default['apache']['pid_file']  = "/var/run/apache2.pid"
   default['apache']['lib_dir'] = "/usr/lib/apache2"
   default['apache']['libexecdir'] = "#{node['apache']['lib_dir']}/modules"
-  default['apache']['default_site_enabled'] = false
+  default['apache']['default_site_enabled'] = true
 when "arch"
   default['apache']['package'] = "apache"
   default['apache']['dir']     = "/etc/httpd"
@@ -104,7 +104,7 @@ end
 
 # General settings
 default['apache']['listen_ports'] = ["80"]
-default['apache']['contact'] = "ops@example.com"
+default['apache']['contact'] = "ahunt@opaqueresearch.com"
 default['apache']['timeout'] = 300
 default['apache']['keepalive'] = "On"
 default['apache']['keepaliverequests'] = 100
